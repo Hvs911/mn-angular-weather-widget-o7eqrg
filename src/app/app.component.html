@@ -1,0 +1,34 @@
+<nb-card class="p-5">
+	<nb-card-header></nb-card-header>
+	<nb-card-body class="module" [ngClass]="bg">
+		<div>
+			<div class="row current">
+				<div class="col">
+          <img src="https://i.ibb.co/tbzMBj9/sun.png" width="140px">
+          </div>
+				<div class="col current-temp">80<sup>C</sup></div>
+			</div>
+		</div>
+		<div class="today-detail">
+			<div>SUNNY 5:35 PM</div>
+      <div>86 HIGH & 64 LOW</div>
+      <div>PRECIP: 5 mm</div>
+      <div>HUMADITY: 10%</div>
+      <div>WIND FROM SE @ 2 km/h</div>
+		</div>
+
+		<div class="row next-days">
+			<div class="col" *ngFor="let w of data">
+				<div>{{w}}</div>
+        <div><img src="https://i.ibb.co/PxpXPt9/sun-png-1.png" width="32px"></div>
+        <div><span>81</span> <img src="https://i.ibb.co/XXG0rp5/temp.png" width="16px"></div>
+        <div><span>60</span> <img src="https://i.ibb.co/XXG0rp5/temp.png" width="16px"></div>
+        <div><span>5%</span> <img src="https://i.ibb.co/MRNm1fd/rain.png" width="14px"></div>
+			</div>
+		</div>
+	</nb-card-body>
+</nb-card>
+
+<button (click)="bg1()">Background 1</button>
+<button (click)="bg2()">Background 2</button>
+<button (click)="bg3()">Background 3</button>

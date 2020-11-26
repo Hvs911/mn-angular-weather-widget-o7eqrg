@@ -1,0 +1,105 @@
+.module {
+  min-width: 400px;
+  max-width: 500px;
+  height: 440px;
+  border: gray solid 1px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.module::after {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1547438349-ccaae46cc0ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.current {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.current-temp {
+  font-size: 79px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+.today-detail {
+  padding-top: 5px;
+  margin-left: 20px;
+  height: 170px;
+  font-size: 16px;
+}
+
+.today-detail > div {
+  padding: 2px;
+}
+
+.next-days {
+  margin: 0;
+  background-color: rgba($color: #000e02, $alpha: 0.5);
+  color: white;
+  font-size: 13px;
+  border-radius: 0 0 15px 19px;
+  text-align: center;
+  -webkit-box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.next-days span {
+  vertical-align:middle;
+}
+
+.bg1::after {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1547438349-ccaae46cc0ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+
+.bg2::after {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1542048675417-cf01421c9384?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=613&q=80") center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.bg3::after {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1551123426-3a56d2605913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+}
